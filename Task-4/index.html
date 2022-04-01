@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <title>Crud Operation</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="username">username</label>
+                        <input type="text" name="username" id="username" placeholder="enter username">
+                    </div>
+                    <div>
+                        <label for="emailid">emailid</label>
+                        <input type="text" name="emailid" id="emailid" placeholder="enter valid emailid">
+                    </div>
+                    <div>
+                        <label for="empid">empid</label>
+                        <input type="text" name="empid" id="empid" placeholder="enter valid empid">
+                    </div>
+                    <div>
+                        <label for="phoneno">phoneno</label>
+                        <input type="text" name="phoneno" id="phoneno" placeholder="enter phoneno">
+                    </div>
+                    <div>
+                        <label for="male">male</label>
+                        <input type="radio" name="gender" id="gender">
+                        <label for="female">female</label>
+                        <input type="radio" name="gender" id ="gender">
+                    </div>
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>username</th>
+                                <th>emailid</th>
+                                <th>empid</th>
+                                <th>phoneno</th>
+                                <th>gender</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
