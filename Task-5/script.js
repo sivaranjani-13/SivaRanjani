@@ -1,7 +1,11 @@
 var indexValue = 1;
          showImg(indexValue);
-         function btm_slide(e){showImg(indexValue = e);}
-         function side_slide(e){showImg(indexValue += e);}
+         function btm_slide(e){
+                  indexValue = e;
+                  showImg(indexValue);}
+         function side_slide(e){
+                  indexValue += e;
+                  showImg(indexValue);}
          function showImg(e){
            var i;
            const img = document.querySelectorAll('img');
