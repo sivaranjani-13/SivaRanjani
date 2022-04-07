@@ -1,16 +1,14 @@
-let searchBox=document.querySelector('#search-box');
-let images=document.querySelectorAll('.container .image-container .image');
+function searchbooks () {
+    let searchBox=document.querySelector('#search-box');
+    let images=document.querySelectorAll('.image');
+    var key=searchBox.value.toLowerCase();
+    console.log(searchBox.value.toLowerCase());
+    for(let i of images){
+        var values=i.querySelector("h3").innerText.toLowerCase();
+        if(values.indexOf(key)>=0)
+            i.style["display"]="";
+        else
+            i.style["display"]="none";
+    }
 
-searchBox.oninput= () =>{
-    image.forEach(hide => hide.style.display='none');
-let value=searchBox.value;
-image.forEach(filter =>{
-    let title = filter.getAttribute('data-title');
-    if(value==title){
-        filter.style.display ='block';
-    }
-    if(searchBox.value == ''){
-    filter.style.display ='block';
-    }
-});
-};
+}
