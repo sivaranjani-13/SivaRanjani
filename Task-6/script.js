@@ -1,6 +1,6 @@
 const collapseItemHeader = document.querySelectorAll(".collapse-item-header")
 
-collapseItemHeader.forEach(collapseItemHeader => {
+collapseItemHeader.forEach(() => {
     collapseItemHeader.addEventListener("click", () => {
         const currentlyActivecollapseItemHeader = document.querySelector(".collapse-item-header.active");
         if(currentlyActivecollapseItemHeader && currentlyActivecollapseItemHeader!==collapseItemHeader){
