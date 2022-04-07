@@ -1,6 +1,6 @@
 var selectedRow = null;
-function onFormSubmit(e){
-    event.preventDefault();
+function onFormSubmit(evt){
+    evt.preventDefault();
     var formData = readFormData();
     if(selectedRow === null){
         insertNewRecord(formData);
